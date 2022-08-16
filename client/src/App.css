@@ -1,8 +1,80 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 .App {
- background-color: aliceblue;
+ background-color: #cd9e28;
  height: 100vh;
  display: flex;
  flex-direction: column;
  justify-content: center;
  align-items: center;
+
+}
+
+h1{
+    font-size: 3.7rem;
+    margin-top: 50px;
+    color: #b51b23;
+}
+
+.tag{
+    display: flex;
+    align-items: center;
+}
+.tag p{
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+.tag input{
+    width: 400px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 20px;
+    margin: 20px 0;
+}
+input::file-selector-button{
+    background-color: #b51b23;
+    color: white;
+    border: none;
+    height: 35px;
+    width: 200px;
+    margin-right: 50px;
+}
+.fileInputAndButton{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+#fileInput{
+    width: 100%;
+    height:35px ;
+}
+.fileInputAndButton button{
+    height: 35px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #b51b23 ;
+    color: white;
+}
+.button{
+    height: 35px;
+    width: 400px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #b51b23 ;
+    color: white;
+}
+.images{
+    width: 100%;
+    display: flex;
+    justify-content: center;    
+}
+img{
+    margin: 0 10px;
 }

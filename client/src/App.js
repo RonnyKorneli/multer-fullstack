@@ -79,18 +79,19 @@ function App() {
           <h1>Multer Application</h1> 
           
           <div className='tag'>
-            <p>Description</p>
-            <input type="text" value={message} onChange={e => setMessage(e.target.value)}/>
+          
+            <input placeholder='Image description' type="text" value={message} onChange={e => setMessage(e.target.value)}/>
           </div> 
 
-          <div>
-            <input type="file" name="uploaded_file" onChange={fileHandler}/>
+          <div className='fileInputAndButton'>
+            <input id='fileInput' type="file" name="uploaded_file" onChange={fileHandler}/>
             <button onClick={saveFile}>SUBMIT</button>
           </div>
 
-          <button onClick={lastFiles}>Get Images</button>
-          <button onClick={deleteAllHandler}>Delete All</button>
+          <button className='button' onClick={lastFiles}>Get Images</button>
+          <button className='button' onClick={deleteAllHandler}>Delete All</button>
 
+          <div className='images'>
             {
               arrayOfFiles &&
               arrayOfFiles.map((item,index) => 
@@ -101,6 +102,7 @@ function App() {
               )
               
             }
+            </div>
 
           
 
